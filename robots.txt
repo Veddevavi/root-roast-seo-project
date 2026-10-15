@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://veddevavi.github.io/root-roast-seo-project/sitemap.xml
