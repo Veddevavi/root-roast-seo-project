@@ -1,7 +1,9 @@
 
-/* ==============================
-   ROOT & ROAST - RESPONSIVE CSS
-   ============================== */
+/* =========================================
+   ROOT & ROAST - FINAL COFFEE SHOP THEME
+   ========================================= */
+
+/* Global settings */
 * {
     box-sizing: border-box;
 }
@@ -13,15 +15,15 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffaf3;
-    color: #33251f;
+    background-color: #F3E9DC;
+    color: #3D2B22;
     margin: 0;
     padding: 0;
     line-height: 1.7;
     overflow-wrap: break-word;
 }
 
-/* Main page layout */
+/* Header and main layout */
 header,
 main {
     width: 100%;
@@ -47,20 +49,20 @@ h3 {
 }
 
 h1 {
-    color: #6f3e27;
+    color: #6F3E27;
     font-size: clamp(28px, 4vw, 42px);
     margin: 0 0 18px;
 }
 
 h2 {
-    color: #8b5e3c;
+    color: #8B5E3C;
     font-size: clamp(22px, 3vw, 30px);
     margin-top: 28px;
     margin-bottom: 12px;
 }
 
 h3 {
-    color: #6f3e27;
+    color: #6F3E27;
     font-size: 20px;
     margin-bottom: 6px;
 }
@@ -71,15 +73,16 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    background-color: #4b2e22;
+    background-color: #4B2E22;
     padding: 12px 18px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin: 18px 0 24px;
+    box-shadow: 0 4px 12px rgba(75, 46, 34, 0.12);
 }
 
 nav a {
     display: inline-block;
-    color: #ffffff;
+    color: #FFF8EF;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 14px;
@@ -89,7 +92,7 @@ nav a {
 
 nav a:hover,
 nav a:focus-visible {
-    background-color: #79513b;
+    background-color: #79513B;
     text-decoration: underline;
 }
 
@@ -99,7 +102,7 @@ p {
 }
 
 a {
-    color: #7b452b;
+    color: #79513B;
 }
 
 main a {
@@ -107,29 +110,35 @@ main a {
 }
 
 main a:hover {
-    color: #4b2e22;
+    color: #4B2E22;
 }
 
-/* Sections */
+/* Content sections */
 section {
     width: 100%;
     margin-bottom: 30px;
 }
 
-/* Coffee image */
+/* Soft sage-green home section */
+main section:first-of-type {
+    background-color: #E3E8D8;
+    padding: 28px;
+    border-radius: 16px;
+    margin-top: 12px;
+}
+
+/* Flexible coffee image */
 img {
     display: block;
     width: 100%;
-    max-width: 525px;
+    max-width: 420px;
     height: auto;
-    aspect-ratio: 1377 / 748;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
     border-radius: 14px;
     margin: 22px 0;
 }
 
-/* Menu list */
+/* Lists */
 ul {
     padding-left: 24px;
 }
@@ -140,7 +149,7 @@ li {
 
 /* Keyboard accessibility */
 a:focus-visible {
-    outline: 3px solid #c58b52;
+    outline: 3px solid #C58B52;
     outline-offset: 4px;
 }
 
@@ -155,7 +164,7 @@ a:focus-visible {
     }
 
     img {
-        max-width: 100%;
+        max-width: 420px;
     }
 }
 
@@ -176,7 +185,6 @@ a:focus-visible {
 
     h1 {
         font-size: 28px;
-        line-height: 1.3;
     }
 
     h2 {
@@ -197,15 +205,21 @@ a:focus-visible {
 
     nav a {
         padding: 8px 12px;
-        margin: 0;
     }
 
+    /* Smaller, centered mobile image */
     img {
         width: 100%;
-        max-width: 100%;
+        max-width: 360px;
         height: auto;
-        margin: 18px 0;
+        margin: 18px auto;
         border-radius: 10px;
+    }
+
+    /* Mobile home section */
+    main section:first-of-type {
+        padding: 18px;
+        border-radius: 12px;
     }
 
     ul {
