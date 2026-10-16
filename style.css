@@ -144,7 +144,7 @@ h1 span {
 .menu-hero > p:not(.eyebrow) {
     max-width: 620px;
     margin: 0 auto 26px;
-    color: var(--muted);
+    color: #45352C;
     font-size: 17px;
 }
 
